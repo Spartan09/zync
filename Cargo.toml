@@ -12,11 +12,11 @@ path = "src/main.rs"
 name = "newsletter"
 
 [dev-dependencies]
-claims = "0.7"
-fake = "2.9"
-quickcheck = "1.0.3"
+claims = "0.8.0"
+fake = "5.1.0"
+quickcheck = "1.1.0"
 quickcheck_macros = "1"
-rand = "0.8"
+rand = "0.10.1"
 tokio = { version = "1", features = ["rt", "macros"] }
 wiremock = "0.6"
 serde_json = "1"
@@ -25,9 +25,9 @@ serde_json = "1"
 actix-web = "4"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 serde = { version = "1", features = ["derive"] }
-reqwest = { version = "0.12", features = ["json"] }
+reqwest = { version = "0.13.4", features = ["json"] }
 serde-aux = "4"
-config = "0.14"
+config = "0.15.23"
 uuid = { version = "1", features = ["v4"] }
 chrono = { version = "0.4.22", default-features = false, features = ["clock"] }
 tracing = { version = "0.1", features = ["log"] }
@@ -37,7 +37,7 @@ tracing-log = "0.2"
 tracing-actix-web = "0.7"
 secrecy = { version = "0.8", features = ["serde"] }
 unicode-segmentation = "1"
-validator = "0.18"
+validator = "0.20.0"
 
 
 [dependencies.sqlx]
