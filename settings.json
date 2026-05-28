@@ -1,0 +1,9 @@
+{
+  "context_servers": {
+    "postgres-context-server": {
+      "settings": {
+        "database_url": "postgresql://myuser:mypassword@localhost:5432/mydatabase"
+      }
+    }
+  }
+}
