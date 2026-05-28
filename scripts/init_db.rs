@@ -1,11 +1,9 @@
-#!/usr/bin/env rust-script
-//! Dependencies can be specified in the script file itself as follows:
-//!
-//! ```cargo
-//! [package]
-//! edition = "2024"
-//! ```
+#!/usr/bin/env -S cargo +nightly -Zscript
 
+---cargo
+ [package]
+ edition = "2024"
+---
 use std::env;
 use std::process::{Command, Stdio};
 use std::thread;
