@@ -32,6 +32,8 @@ jobs:
 
       - name: Install the Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: nightly
 
       - name: Setup mold linker for faster build time
         uses: rui314/setup-mold@v1
@@ -73,6 +75,7 @@ jobs:
       - name: Install the Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
+          toolchain: nightly
           components: rustfmt
       - name: Enforce formatting
         run: cargo fmt --check
@@ -87,6 +90,7 @@ jobs:
       - name: Install the Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
+          toolchain: nightly
           components: clippy
       - name: Setup mold linker for faster build time
         uses: rui314/setup-mold@v1
@@ -110,6 +114,7 @@ jobs:
       - name: Install the Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
+          toolchain: nightly
           components: llvm-tools-preview
       - name: Setup mold linker for faster build time
         uses: rui314/setup-mold@v1
